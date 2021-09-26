@@ -153,6 +153,10 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     margin:25.3em 0.8em 4.2em 0.8em;
 }
 
+.active {
+    color:var(--primary-color);
+}
+
 .song {
     display:flex;
     justify-content: space-around;
@@ -166,14 +170,14 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     background-color: var(--primary-color);
 }
 
+.song:active {
+    opacity:0.8;
+}
+
 .song.active .title,
 .song.active .author,
 .song.active .option-icon {
     color:#fff;
-}
-
-.song:hover {
-    background-color:rgba(0, 0, 0, 0.01)
 }
 
 .thumb {
